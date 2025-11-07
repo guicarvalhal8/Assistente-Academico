@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente Acadêmico - UniEvangélica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="login-view">
+        <div class="login-container">
+            <h1>Assistente Acadêmico</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="matricula">Matrícula</label>
+                    <input type="text" id="matricula" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" required>
+                </div>
+                <button type="button" id="btn-login">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="dashboard-view" style="display: none;">
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <button id="nav-chat">Chat Acadêmico</button>
+            <button id="nav-quiz">Quiz Semanal</button>
+            <button id="nav-comunidade">Comunidade</button>
+        </nav>
+        <main class="content">
+            <div id="chat-content" class="content-area">
+                <h2>Chat Acadêmico</h2>
+                <div id="chat-box" class="chat-box"></div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Digite sua pergunta...">
+                    <button id="btn-send-chat">Enviar</button>
+                </div>
+            </div>
+            <div id="quiz-content" class="content-area" style="display: none;">
+                <h2>Quiz Semanal</h2>
+                <div id="quiz-box"></div>
+            </div>
+            <div id="comunidade-content" class="content-area" style="display: none;">
+                <h2>Comunidade</h2>
+                <div id="comunidade-box"></div>
+            </div>
+        </main>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
